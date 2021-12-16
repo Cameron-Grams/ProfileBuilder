@@ -10,12 +10,6 @@ open it and record
 if not create
 
 """
-#  student_path = f"./{source_dir}/{student}"
-#  student_files = os.listdir(student_path)
-
-#  files = os.listdir(args_source_dir)
-
-
 
 def main(source_dir, class_number, assignment_number):
     current_files = os.listdir()
@@ -28,7 +22,7 @@ def main(source_dir, class_number, assignment_number):
 
     PROFILES_FILES = os.listdir('./PROFILES')
     if 'STUDENT_PROFILES.pkl' in PROFILES_FILES:
-#        update_class(class_number, assignment_number, source_dir)
+#        update_class(source_dir, class_number, assignment_number)
         print("STUDENT_PROFILES.pkl found")
     else:
         create_class(source_dir, class_number, assignment_number)
