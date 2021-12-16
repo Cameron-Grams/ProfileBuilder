@@ -15,9 +15,7 @@ class StudentProfile:
         return utc_time_obj
 
     def record_assignment(self, class_number, assignment_number, raw_attempts=None):
-        # convert list of raw attempts to list of datetime objects
-        # create assignment object for class and assignment number
-        # update with the datetime attempts
+        # include new assignments in the student object
         assignment = AssignmentDetails(class_number, assignment_number)
 
         if raw_attempts:

@@ -5,15 +5,14 @@ from create_class import create_class
 
 """
 if there is a student_profiles pickle file in the student_profiles folder
-open it and record
+open it and record -- This is a decision, should this program manage existing records
+or should each assignment produce single collections?
 
 if not create
-
 """
 
 def main(source_dir, class_number, assignment_number):
     current_files = os.listdir()
-#    print(current_files)
 
     if 'PROFILES' in current_files:
         print("PROFILES found")
@@ -22,11 +21,12 @@ def main(source_dir, class_number, assignment_number):
 
     PROFILES_FILES = os.listdir('./PROFILES')
     if 'STUDENT_PROFILES.pkl' in PROFILES_FILES:
-#        update_class(source_dir, class_number, assignment_number)
+#        update_class(source_dir, class_number, assignment_number) <-- Next
         print("STUDENT_PROFILES.pkl found")
     else:
         create_class(source_dir, class_number, assignment_number)
-        print("Creating new STUDENT_PROFILES")
+#        DEBUG print("Creating new STUDENT_PROFILES")
+    print("Exiting build_student_profile.main")
 
 
 ### Define the arguments needed to build profiles 

@@ -10,6 +10,7 @@ with open('STUDENT_PROFILES.pkl', 'rb') as file:
     af = pickle.load(file)
     for a in af:
         print(a.email)
-#        print(a.assignments)
+        print(a.assignments[0].num_attempts)
+        print(a.assignments[0].attempts)
 
 file.close()
