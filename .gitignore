@@ -1,0 +1,4 @@
+*.swp
+/PROFILES
+C_small
+__pycache__
