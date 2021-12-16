@@ -1,6 +1,6 @@
 from datetime import datetime as dt
 from datetime import timezone
-from assignment_performance import AssignmentDetails
+from assignment_class import AssignmentDetails
 
 class StudentProfile:
     def __init__(self, email):
